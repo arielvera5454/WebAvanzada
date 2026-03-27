@@ -1,0 +1,52 @@
+.users-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.user-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.user-card h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.user-card p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #0066cc;
+  padding: 2rem;
+}
+
+.error {
+  text-align: center;
+  color: #cc0000;
+  padding: 1rem;
+  background-color: #ffe6e6;
+  border-radius: 4px;
+  border-left: 4px solid #cc0000;
+}
